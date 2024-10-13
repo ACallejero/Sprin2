@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
         // Dimensiones de la picina 1
@@ -18,7 +19,7 @@ public class Main {
 
         // Calculamos el vilumen de las piscinas.
         // Psicina 1
-        int volumen1 = piscina2Ancho * piscina2Profundo * piscina2Largo;
+        int volumen1 = piscina1Ancho * piscina1Profundo * piscina1Largo;
         // Piscina 2
         int volumen2= piscina2Ancho * piscina2Profundo * piscina2Largo;
 
@@ -39,9 +40,21 @@ public class Main {
         System.out.println("El volumet de las dos piscinas juntas es = " + (volumen1 + volumen2) + "cm3.\n");
 
         // Ahora intercambiamos datos.
-        
+        int intercambio = piscina1Profundo;
+        piscina1Profundo = piscina2Profundo;
+        piscina2Profundo = intercambio;
 
-        
+        int volumen1Cambiado = piscina1Ancho * piscina1Profundo * piscina1Largo;
+        int volumen2Cambiado = piscina2Ancho * piscina2Profundo * piscina2Largo;
 
-        }
+        System.out.println("El nuevo volimen de piscina 1 es = " + volumen1Cambiado + "cm3.");
+        System.out.println("El nuevo volimen de piscina 2 es = " + volumen2Cambiado + "cm3.");
+
+
+
+
+
+
+
     }
+}
